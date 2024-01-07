@@ -1,12 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Layout } from 'components/Layout';
 import './App.css';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import HomePage from 'pages/home';
 import Router from 'components/Router';
 
 function App() {
-  return <Router />;
+  return (
+    <Layout>
+      <Router />
+    </Layout>
+  );
 }
 
 export default App;
